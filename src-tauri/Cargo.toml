@@ -17,7 +17,6 @@ tauri-build = {version = "1.2", features = [] }
 
 [dependencies]
 tauri = {version = "1.2", features = ["api-all", "devtools", "process-command-api"] }
-actix-cors = "0.6.4"
 futures-util = "0.3.26"
 
 [features]

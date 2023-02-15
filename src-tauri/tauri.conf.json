@@ -19,7 +19,9 @@
         "scope": [
           {
             "name": "bin/redis",
-            "sidecar": true
+            "cmd": "bin/redis",
+            "sidecar": true,
+            "args": true
           }
         ]
       },
@@ -30,10 +32,12 @@
         "all": true
       },
       "fs": {
+        "readFile": true,
         "writeFile": true,
         "createDir": true,
         "scope": [
-          "**"
+          "/Users/guoshuai/*",
+          "$RESOURCE/*"
         ]
       }
     },
@@ -63,7 +67,9 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "resources": [],
+      "resources": [
+        "resources/*"
+      ],
       "shortDescription": "",
       "targets": "all",
       "windows": {
