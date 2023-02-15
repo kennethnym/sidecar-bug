@@ -20,6 +20,13 @@
           {
             "name": "bin/redis",
             "sidecar": true
+          },
+          {
+            "name": "not-sidecar",
+            "cmd": "/Users/kennethng/Projects/sidecar-bug/src-tauri/bin/esbuild-aarch64-apple-darwin",
+            "args": [
+              "main.js"
+            ]
           }
         ]
       },
